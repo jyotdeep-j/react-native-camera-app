@@ -11,6 +11,8 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
     const cameraRef = useRef(null);
     const [isRecording, setIsRecording] = useState(false);
 
+    console.log("test")
+
     const startRecording = async () => {
         if (cameraRef.current) {
             setIsRecording(true);
